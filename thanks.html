@@ -2,28 +2,5 @@
 <style>body{font-family:system-ui,sans-serif;max-width:600px;margin:auto;padding:24px}label{display:block;font-weight:700;margin-top:14px}input,textarea{width:100%;padding:10px;font-size:1rem;box-sizing:border-box}button{margin-top:18px;width:100%;padding:14px;background:#ffcc00;border:0;font-weight:800;font-size:1.1rem;border-radius:8px}.note{font-size:.9rem;color:#444}#done{display:none;background:#e8ffe8;padding:16px;border-radius:8px}#done:target{display:block}</style></head><body>
 <div id="done"><h2>Got it! Your details are in.</h2><p>Your kit will be delivered within 48 hours. Questions? Email tyler@froglegsmedia.com.</p></div>
 <h1>You're in! One last step.</h1><p>Tell us about your shop. Your 48 hours start when this is submitted.</p>
-<form id="f" action="https://formsubmit.co/tyler@froglegsmedia.com" method="POST">
-<input type="hidden" name="_subject" value="New Doorbuster Kit order intake">
-<input type="hidden" name="_template" value="table">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_next" value="https://froglegsmedia.github.io/doorbuster-kit/thanks.html#done">
-<input type="text" name="_honey" style="display:none">
-<label>Business name<input name="business_name" required></label>
-<label>Your name<input name="contact_name" required></label>
-<label>Email for delivery<input type="email" name="email" required></label>
-<label>Phone<input type="tel" name="phone"></label>
-<label>City and state<input name="city"></label>
-<label>Type of business<input name="business_type" placeholder="e.g. cafe, salon, boutique"></label>
-<label>What you sell<textarea name="what_you_sell" rows="2"></textarea></label>
-<label>Your Black Friday / Small Business Saturday offer or discount (or "suggest one")<textarea name="offer" rows="3"></textarea></label>
-<label>Sale dates<input name="dates" placeholder="e.g. Nov 27 to Nov 30"></label>
-<label>Brand colors<input name="brand_colors" placeholder="e.g. navy and gold"></label>
-<label>Logo link, website or Instagram<input name="logo_or_instagram"></label>
-<p class="note">No logo link? Just email your logo file to tyler@froglegsmedia.com after submitting.</p>
-<label>Anything else we should know?<textarea name="notes" rows="3"></textarea></label>
-<button type="submit">Send my details</button></form><p class="note">Trouble submitting? <a id="mail" href="mailto:tyler@froglegsmedia.com?subject=Doorbuster%20Kit%20order%20intake">Email your details instead</a>.</p>
-<script>
-document.getElementById('f').addEventListener('submit',async function(e){e.preventDefault();var f=this,d=new FormData(f);
-try{var r=await fetch('https://formsubmit.co/ajax/tyler@froglegsmedia.com',{method:'POST',headers:{Accept:'application/json'},body:d});var j=await r.json();if(!r.ok||String(j.success)!=='true')throw 0;location.hash='done';f.style.display='none';}
-catch(x){var b='';d.forEach(function(v,k){if(k[0]!=='_')b+=k+': '+v+'\n';});location.href='mailto:tyler@froglegsmedia.com?subject='+encodeURIComponent('Doorbuster Kit order intake')+'&body='+encodeURIComponent(b);}});
-</script></body></html>
+<p><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSenvr_QFfRT94tJGqIG2tp4xf8cDungFpM0kZqJHPOeNwIkpg/viewform" style="display:inline-block;padding:14px 22px;background:#111;color:#fff;border-radius:8px;text-decoration:none;font-weight:bold">Fill out your order form</a></p><p class="note">Trouble submitting? <a id="mail" href="mailto:tyler@froglegsmedia.com?subject=Doorbuster%20Kit%20order%20intake">Email your details instead</a>.</p>
+</body></html>
