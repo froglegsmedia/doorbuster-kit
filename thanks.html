@@ -1,0 +1,12 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Thanks! Next step</title>
+<style>body{font-family:system-ui,sans-serif;max-width:600px;margin:auto;padding:24px}label{display:block;font-weight:700;margin-top:14px}input,textarea{width:100%;padding:10px;font-size:1rem;box-sizing:border-box}button{margin-top:18px;width:100%;padding:14px;background:#ffcc00;border:0;font-weight:800;font-size:1.1rem;border-radius:8px}</style></head><body>
+<h1>You're in! One last step.</h1><p>Tell us about your shop. Your 48 hours start when this is submitted.</p>
+<form action="FORM_ENDPOINT" method="POST">
+<label>Business name<input name="business" required></label>
+<label>Email for delivery<input type="email" name="email" required></label>
+<label>Business type and city<input name="type_city"></label>
+<label>Logo link (Drive, Dropbox, or website)<input name="logo"></label>
+<label>Brand colors<input name="colors" placeholder="e.g. navy and gold"></label>
+<label>Offer idea (or "suggest one")<textarea name="offer" rows="3"></textarea></label>
+<label>Website or Instagram<input name="links"></label>
+<button type="submit">Send my details</button></form></body></html>
